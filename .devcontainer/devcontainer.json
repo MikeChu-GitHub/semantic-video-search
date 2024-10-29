@@ -1,0 +1,25 @@
+{
+	"name": "semantic-video-search",
+	"dockerComposeFile": ["./docker-compose.yaml"],
+    "service": "spark",
+    "workspaceFolder": "/home/mikechu/code",
+    "updateContentCommand": "python3 -m pip install -r requirements.txt",
+    "customizations": {
+        "vscode" : {
+            "settings": {
+                "terminal.integrated.profiles.linux": {
+                    "bash": {
+                        "path": "/bin/bash"
+                    }
+                },
+                "terminal.integrated.defaultProfile.linux": "bash",
+                "python.linting.enabled": true,
+                "python.linting.pylintEnabled": true
+            },
+            "extensions": [
+                "ms-python.python",
+		        "ms-toolsai.jupyter"
+            ]
+        }
+    }
+}
